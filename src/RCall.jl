@@ -6,9 +6,6 @@ using Dates
 using Libdl
 using Random
 using REPL
-if VERSION ≤ v"1.1.1"
-   using Missings
-end
 using CategoricalArrays
 using DataFrames
 using StatsModels
@@ -27,7 +24,7 @@ export RObject,
    globalEnv,
    isnull, isna, anyna,
    robject, rcopy, rparse, rprint, reval, rcall, rlang,
-   rimport, @rimport, @rlibrary, @rput, @rget, @var_str, @R_str
+   rimport, @rimport, @rlibrary, @rput, @rget, @R_str
 
 # These two preference get marked as compile-time preferences by being accessed
 # here
